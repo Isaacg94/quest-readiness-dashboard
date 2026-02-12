@@ -27,7 +27,7 @@ export function ReadinessScore({
       <div className="relative flex flex-col items-center space-y-6 text-center">
         <div className="space-y-1">
           <h1 className="text-2xl font-bold md:text-3xl">
-            Welcome back, {learnerName}! 👋
+            Hi, {learnerName}! 👋
           </h1>
           <p className="text-muted-foreground">Here's your readiness overview</p>
         </div>
