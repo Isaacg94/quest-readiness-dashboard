@@ -5,9 +5,13 @@
 
 ### Overview
 
-This project implements a learner-facing readiness dashboard for Quest, Nova Pioneer’s Post School Success Platform.
+This project implements a learner-facing readiness dashboard for Quest, Nova Pioneer’s Post School Success Platform (PSSP).
 
-It visualizes a learner’s overall readiness score, skill breakdown, and recommended next steps in a mobile-first experience designed for 15–18 year olds.
+The application visualizes a learner’s overall readiness score, provides a breakdown across key skill areas, and surfaces actionable insights to guide their next steps.
+
+Designed with a mobile-first approach, the experience prioritizes clarity, strong visual hierarchy, and motivation for secondary school students. It embraces a clean, modern glass-morphic inspired interface to create a more engaging and uplifting alternative to traditional, monotonous dashboard designs.
+
+The goal is to provide learners with direct, intuitive insight into their strengths and areas for growth, capturing their attention while empowering them to take ownership of their journey toward university, career, and life beyond high school.
 
 ## Tech Stack
 ```
@@ -68,13 +72,18 @@ The UI layer is intentionally separated from business logic.
 # Design Decisions
 ## Visual Language
 
-Glassmorphism cards for clarity and focus
+Glassmorphism elements to create depth, focus, and layered hierarchy while maintaining a light, modern learner-friendly aesthetic.
 
-Soft white gradients inspired by Nova Pioneer colors
+Background illustration (rocket + learner in space beside the moon) to reinforce the metaphor of readiness as launch, visually framing progress as forward momentum toward life after high school. The illustration integrates Nova Pioneer’s navy, green, and amber brand palette to ground the experience in brand identity while keeping it aspirational.
 
-Circular progress ring as primary readiness anchor
+Soft white gradient cards to ensure readability and contrast against a dynamic background, balancing inspiration with clarity.
 
-Achievement badge to reinforce progress
+Circular progress ring as the primary readiness anchor, leveraging radial design theory to communicate completeness, momentum, and growth rather than static measurement.
+
+Achievement-style badge to introduce subtle gamification and reinforce positive progress cues.
+
+Dynamic use of Nova Pioneer brand colors to communicate score levels throughout the UI.
+
 
 ## Mobile-First Approach
 
@@ -87,6 +96,8 @@ Generous spacing for readability
 ## Interaction Design
 
 Toggle between summary and detailed views
+
+Filter and search through skill areas
 
 Clickable skill areas with deeper insight pages
 
