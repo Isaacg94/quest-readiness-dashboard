@@ -9,7 +9,7 @@ This project implements a learner-facing readiness dashboard for Quest, Nova Pio
 
 The application visualizes a learner’s overall readiness score, provides a breakdown across key skill areas, and surfaces actionable insights to guide their next steps.
 
-Designed with a mobile-first approach, the experience prioritizes clarity, strong visual hierarchy, and motivation for secondary school students. It embraces a clean, modern glass-morphic inspired interface to create a more engaging and uplifting alternative to traditional, monotonous dashboard designs.
+Designed with a mobile-first approach, the experience prioritizes clarity, strong visual hierarchy, and motivation for secondary school students. It embraces a clean, modern glassmorphic inspired interface to create a more engaging and uplifting alternative to traditional, monotonous dashboard designs.
 
 The goal is to provide learners with direct, intuitive insight into their strengths and areas for growth, capturing their attention while empowering them to take ownership of their journey toward university, career, and life beyond high school.
 
@@ -72,7 +72,7 @@ The UI layer is intentionally separated from business logic.
 # Design Decisions
 ## Visual Language
 
-Glassmorphism elements to create depth, focus, and layered hierarchy while maintaining a light, modern learner-friendly aesthetic.
+Glassmorphic elements to create depth, focus, and layered hierarchy while maintaining a light, modern learner-friendly aesthetic.
 
 Background illustration (rocket + learner in space beside the moon) to reinforce the metaphor of readiness as launch, visually framing progress as forward momentum toward life after high school. The illustration integrates Nova Pioneer’s navy, green, and amber brand palette to ground the experience in brand identity while keeping it aspirational.
 
