@@ -87,11 +87,15 @@ Dynamic use of Nova Pioneer brand colors to communicate score levels throughout 
 
 ## Mobile-First Approach
 
-Responsive layout optimized for small screens
+Responsive layout optimized for small screens, prioritizing a single-column flow and minimizing visual clutter to support focused, distraction-free engagement.
 
-Clear vertical hierarchy
+Clear vertical hierarchy to guide natural scroll behavior, ensuring key information (readiness score, insights, next steps) is surfaced immediately and progressively.
 
-Generous spacing for readability
+Generous spacing and touch-friendly interaction zones to improve readability, reduce cognitive strain, and support comfortable thumb navigation.
+
+Bottom navigation with active state highlighting, positioned within natural thumb reach to improve discoverability and reinforce orientation within the app.
+
+Contextual breadcrumb on deeper views, providing lightweight wayfinding and reducing navigation friction without overcomplicating the interface.
 
 ## Interaction Design
 

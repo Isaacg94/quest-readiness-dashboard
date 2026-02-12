@@ -1,53 +1,30 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as ProgressPrimitive from "@radix-ui/react-progress"
-import { cn } from "@/lib/utils"
-
-type ProgressVariant = "auto" | "primary" | "success" | "warning" | "danger"
+import * as React from "react";
+import * as ProgressPrimitive from "@radix-ui/react-progress";
+import { cn } from "@/lib/utils";
+import {
+  type ProgressVariant,
+  normalizeToPercent,
+  autoVariantFromScorePercent,
+  getTierHsl,
+  getTrackClass,
+} from "@/utils/readiness-calculator";
 
 type Props = React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root> & {
-  variant?: ProgressVariant
-}
-
-function normalizeToPercent(value?: number | null) {
-  const raw = typeof value === "number" ? value : 0
-  const asPercent = raw > 0 && raw <= 1 ? raw * 100 : raw
-  return Math.min(Math.max(asPercent, 0), 100)
-}
-
-function autoVariantFromValue(v: number): Exclude<ProgressVariant, "auto"> {
-  if (v >= 80) return "success"
-  if (v >= 50) return "primary"
-  if (v >= 25) return "warning"
-  return "danger"
-}
-
-function getTierColorVar(v: Exclude<ProgressVariant, "auto">) {
-  if (v === "success") return "--secondary"
-  if (v === "warning") return "--accent"
-  if (v === "danger") return "--destructive"
-  return "--primary"
-}
+  variant?: ProgressVariant;
+};
 
 const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
   Props
 >(({ className, value, variant = "auto", ...props }, ref) => {
-  const v = normalizeToPercent(value)
-  const resolved = variant === "auto" ? autoVariantFromValue(v) : variant
+  const v = normalizeToPercent(value);
 
-  const tierVar = getTierColorVar(resolved)
-  const tierHsl = `hsl(var(${tierVar}))`
+  const resolved = variant === "auto" ? autoVariantFromScorePercent(v) : variant;
 
-  const trackClass =
-    resolved === "success"
-      ? "bg-secondary/20"
-      : resolved === "warning"
-      ? "bg-accent/25"
-      : resolved === "danger"
-      ? "bg-destructive/20"
-      : "bg-primary/20"
+  const tierHsl = getTierHsl(resolved);
+  const trackClass = getTrackClass(resolved);
 
   return (
     <ProgressPrimitive.Root
@@ -73,9 +50,9 @@ const Progress = React.forwardRef<
         }}
       />
     </ProgressPrimitive.Root>
-  )
-})
+  );
+});
 
-Progress.displayName = ProgressPrimitive.Root.displayName
+Progress.displayName = ProgressPrimitive.Root.displayName;
 
-export { Progress }
+export { Progress };
