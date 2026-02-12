@@ -1,0 +1,130 @@
+{
+  "learner": {
+    "name": "David Adedeji",
+    "grade": "Final Year",
+    "overallScore": 68,
+    "level": "Building Momentum",
+    "levelDescription": "You're making steady progress across multiple areas. Keep up the consistent effort!"
+  },
+  "skillAreas": [
+    {
+      "id": "academics",
+      "name": "Academic Excellence",
+      "description": "Core subject performance and learning habits",
+      "score": 80,
+      "trend": "up",
+      "completedActivities": 24,
+      "totalActivities": 30,
+      "icon": "BookOpen",
+      "color": "success",
+      "strengths": [
+        "Strong mathematics performance",
+        "Consistent homework completion",
+        "Active class participation"
+      ],
+      "improvements": [
+        "Focus on science practicals",
+        "Improve essay writing skills"
+      ]
+    },
+    {
+      "id": "career_skills",
+      "name": "Career Readiness",
+      "description": "Professional skills and workplace preparation",
+      "score": 60,
+      "trend": "stable",
+      "completedActivities": 12,
+      "totalActivities": 25,
+      "icon": "Briefcase",
+      "color": "warning",
+      "strengths": [
+        "Good communication skills",
+        "Basic computer literacy"
+      ],
+      "improvements": [
+        "Complete career exploration modules",
+        "Develop presentation skills",
+        "Practice interview techniques"
+      ]
+    },
+    {
+      "id": "life_skills",
+      "name": "Life Skills",
+      "description": "Personal development and social capabilities",
+      "score": 70,
+      "trend": "up",
+      "completedActivities": 18,
+      "totalActivities": 24,
+      "icon": "Heart",
+      "color": "secondary",
+      "strengths": [
+        "Excellent teamwork abilities",
+        "Good time management",
+        "Strong emotional intelligence"
+      ],
+      "improvements": [
+        "Practice financial literacy",
+        "Develop conflict resolution"
+      ]
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Entrepreneurship",
+      "description": "Innovation, creativity, and business thinking",
+      "score": 50,
+      "trend": "stable",
+      "completedActivities": 8,
+      "totalActivities": 20,
+      "icon": "Lightbulb",
+      "color": "accent",
+      "strengths": [
+        "Creative problem solving",
+        "Willingness to try new ideas"
+      ],
+      "improvements": [
+        "Complete business basics course",
+        "Participate in innovation challenges",
+        "Develop project management skills",
+        "Learn about market research"
+      ]
+    }
+  ],
+  "insights": {
+    "strongest": "academics",
+    "focusArea": "entrepreneurship",
+    "primaryRecommendation": "Focus next on entrepreneurship to improve overall readiness",
+    "secondaryRecommendation": "Career skills modules will complement your academic strength",
+    "encouragement": "You're building across multiple areas — consistent engagement will strengthen your progress!",
+    "nextSteps": [
+      "Complete 3 entrepreneurship modules this week",
+      "Attend the upcoming career skills workshop",
+      "Practice one new life skill daily"
+    ]
+  },
+  "recentActivity": [
+    {
+      "date": "2025-01-15",
+      "type": "academics",
+      "title": "Completed Mathematics Assessment",
+      "score": 85
+    },
+    {
+      "date": "2025-01-14",
+      "type": "life_skills",
+      "title": "Finished Time Management Workshop",
+      "score": 90
+    },
+    {
+      "date": "2025-01-12",
+      "type": "career_skills",
+      "title": "Started Resume Building Module",
+      "score": 65
+    }
+  ],
+  "milestones": {
+    "total": 15,
+    "completed": 8,
+    "nextMilestone": "Complete 50 activities across all areas",
+    "progress": 53
+  }
+}
