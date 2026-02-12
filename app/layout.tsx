@@ -16,7 +16,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Quest – Your Future Awaits",
+    default: "Quest | Your Future Awaits",
     template: "%s | Quest",
   },
   description:
