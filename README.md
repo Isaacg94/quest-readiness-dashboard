@@ -143,6 +143,4 @@ PWA offline support
 
 Performance monitoring and analytics
 
-# Loom
 
-[Insert Loom Link Here]
